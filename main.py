@@ -19,7 +19,7 @@ data_samples_creator.generate_circle()
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+app.title = 'MyFirstDash'
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
 df1 = pd.DataFrame({
